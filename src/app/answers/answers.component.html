@@ -1,0 +1,13 @@
+<section class="list">
+    <h2>List of cognitive distortions and alternative answers</h2>
+    <ul class="answers_list">
+        <li *ngFor="let answer of answers">
+          <div>
+              <button (click)="onRemove(answer)">X</button>
+          </div>          
+          <div class="list-item"><label>{{answer.id}} - {{answer.trap_title}}</label>{{answer.trap}}</div>
+          <div class="list-item"><label>{{answer.answer_title}}</label>{{answer.answer}}</div>
+        </li>
+      </ul>
+      <p *ngIf="answers.length == 0">There are no items registered yet</p>
+</section>

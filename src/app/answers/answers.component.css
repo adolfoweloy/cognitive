@@ -1,0 +1,37 @@
+
+/*
+list of cognitive distortions and alternative answers
+*/
+.list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid lightgray;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 0px 0px #e8e8e8;
+}
+
+.list ul {
+    padding: 0;
+}
+
+.list li {
+    list-style: none;
+    display: flex;
+}
+
+.list div button {
+    margin-right: 1em;
+    margin-top: 50%;
+}
+
+.list div.list-item {
+    flex: 1;
+    padding: 0.5em;
+}
+
+.list li div label {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
