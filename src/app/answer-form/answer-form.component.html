@@ -2,13 +2,13 @@
   <h2>Create new items</h2>
   <div>
       <label>Cognitive distortion</label>
-      <input [(ngModel)]="answer.trap_title" placeholder="trap title">
-      <input [(ngModel)]="answer.trap" placeholder="trap">      
+      <input [(ngModel)]="answer.trap_title" placeholder="title">
+      <input [(ngModel)]="answer.trap" placeholder="description">      
   </div>
   <div>
       <label>Alternative answers</label>
-      <input [(ngModel)]="answer.answer_title" placeholder="answer title">
-      <input [(ngModel)]="answer.answer" placeholder="answer">
+      <input [(ngModel)]="answer.answer_title" placeholder="title">
+      <input [(ngModel)]="answer.answer" placeholder="description">
   </div>
   <button (click)="onSave()">Add</button>
 </section>

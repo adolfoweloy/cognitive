@@ -1,0 +1,35 @@
+<article class="details">
+  <section>
+    <h2>Cognitive distortion</h2>
+    <label>{{answer.trap_title}}</label>{{answer.trap}}
+  </section>
+  <section>
+    <h2>Alternative response</h2>
+    <label>{{answer.answer_title}}</label>{{answer.answer}}
+  </section>
+</article>
+
+<article class="stats">
+    <section>
+        <h2>Statistics</h2>
+        <div>
+          <select>
+            <option>low</option>
+            <option>medium</option>
+            <option>strong</option>
+          </select>
+          <input [(ngModel)]="score_description" placeholder="description">
+          <button (click)="add()">+</button>      
+        </div>
+      
+        <ul>
+          <li *ngFor="let info of answer.score_info">
+            {{info[1]}}
+          </li>
+        </ul>
+        <div *ngIf="answer.score_info.length == 0">
+            no stats yet
+        </div>
+    </section>
+  </article>
+<button (click)="goBack()">Back</button>

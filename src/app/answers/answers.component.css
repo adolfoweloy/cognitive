@@ -19,11 +19,23 @@ list of cognitive distortions and alternative answers
 .list li {
     list-style: none;
     display: flex;
+    align-items: center;
+    list-style: none;
 }
 
-.list div button {
-    margin-right: 1em;
-    margin-top: 50%;
+.list li a, a:visited, a:link, a:active, a:hover {
+    cursor: pointer;   
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.list li a:hover {
+    background-color: aliceblue;
+}
+
+li > div:last-child {
+    width: 100%;
 }
 
 .list div.list-item {
